@@ -4,7 +4,9 @@ class SearchesController < ApplicationController
   end
 
   def friends
- foursquare = FoursquareFriends.new 
+ foursquare = FoursquareService.new 
+
+end 
 
   def foursquare
     client_id = "CO3LIXJPH1LYAC5OOTLKLJE334NVDIYG24KUFOVEQ22WVYDP"
